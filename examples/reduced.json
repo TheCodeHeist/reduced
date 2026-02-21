@@ -1,0 +1,41 @@
+{
+  "diff": {
+    "notify": ["discord", "mail"],
+    "mail": {
+      "recipients": ["example1@organization.com", "example2@organization.com"]
+    },
+    "discord": {
+      "webhook_id": "<your_webhook_id>",
+      "webhook_token": "<your_webhook_token>"
+    }
+  },
+  "failure": {
+    "notify": ["discord", "mail"],
+    "mail": {
+      "recipients": [
+        "example1@organization.com",
+        "example2@organization.com",
+        "example3@organization.com"
+      ]
+    },
+    "discord": {
+      "webhook_id": "<your_webhook_id>",
+      "webhook_token": "<your_webhook_token>"
+    },
+    "timeout": 3600
+  },
+  "report": {
+    "notify": ["discord", "mail"],
+    "mail": {
+      "recipients": ["example1@organization.com", "example2@organization.com"]
+    },
+    "discord": {
+      "webhook_id": "<your_webhook_id>",
+      "webhook_token": "<your_webhook_token>"
+    },
+    "interval": 7
+  },
+  "log": {
+    "path": "~/.config/oxidized/reduced.log"
+  }
+}
